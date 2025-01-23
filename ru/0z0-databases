@@ -1,0 +1,30 @@
+Глава Z. Базы данных
+
+z.1. MariaDB
+
+z.1.1. Подключиться к серверу:
+mariadb -h $MARIADB_HOST -u $MARIADB_USER -p $MARIADB_DATABASE
+
+z.1.1. Показать базы данных:
+SHOW DATABASES;
+
+z.1.2. Выбрать базу данных:
+USE databasename;
+
+z.1.3. Показать таблицы внутри базы данных:
+SHOW TABLES;
+
+z.2. PostgreSQL
+
+z.2.1. Подключиться к серверу:
+psql -h $POSTGRES_HOST -U $POSTGRES_USER -W -d $POSTGRES_DATABASE
+
+z.2.2. Список баз данных:
+\l
+
+z.2.3. Подключиться к базе данных:
+\c databasename
+
+z.2.4. Показать отношения:
+\dt
+
