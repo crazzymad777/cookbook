@@ -1,0 +1,30 @@
+Chapter Z. Databases
+
+z.1. MariaDB
+
+z.1.1. Connect to server
+mariadb -h $MARIADB_HOST -u $MARIADB_USER -p $MARIADB_DATABASE
+
+z.1.1. Show databases:
+SHOW DATABASES;
+
+z.1.2. Choose a database:
+USE databasename;
+
+z.1.3. Show tables (inside database):
+SHOW TABLES;
+
+z.2. PostgreSQL
+
+z.2.1. Connect to server:
+psql -h $POSTGRES_HOST -U $POSTGRES_USER -W -d $POSTGRES_DATABASE
+
+z.2.2. List database:
+\l
+
+z.2.3. Connect to database:
+\c databasename
+
+z.2.4. Show relations:
+\dt
+
