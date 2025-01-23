@@ -1,0 +1,14 @@
+Глава Y. GPG Шифрование
+
+y.1. Симметричное шифрование
+
+y.1.1. Зашифровать файл симметрично:
+gpg --cipher-algo AES256 -c [file]
+
+y.1.2. Расшифровать симметрично зашифрованный файл:
+gpg --cipher-algo AES256 -o [output] -d [file]
+
+y.1.3. Пароль из файла:
+gpg --pinentry-mode loopback --passphrase-file=mypassword ...
+
+

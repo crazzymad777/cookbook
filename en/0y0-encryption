@@ -1,0 +1,14 @@
+Chapter Y. GPG Encryption
+
+y.1. Symmetric Encryption
+
+y.1.1. Symmetrically encrypt file:
+gpg --cipher-algo AES256 -c [file]
+
+y.1.2. Decrypt symmetrically encrypted file
+gpg --cipher-algo AES256 -o [output] -d [file]
+
+y.1.3. Passphrase from file
+gpg --pinentry-mode loopback --passphrase-file=mypassword ...
+
+
