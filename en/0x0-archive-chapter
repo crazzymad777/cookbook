@@ -1,24 +1,40 @@
 ## Chapter x. Archives
 
-x.1. Create tar.gz archive:
-tar -czvf package.tar.gz dir1 dir2 dir3 file1 file2
+x.1. Base skills
 
-x.2. Unpack tar.gz archive:
+x.1.1. Create plain tar archive:
+tar -cf package.tar dir1 dir2 dir3 file1 file2
+
+x.1.2. Create plain tar archive & verbose output:
+tar -cvf package.tar dir1 dir2 dir3 file1 file2
+
+x.1.3. Unpack plain archive:
+tar -xvf package.tar
+
+x.2. Compression
+
+x.2.0. Different flags stand for different compression:
++FLAG-+------------SUFFIX-----------------------+
+| -z  | gz                                      |
+| -j  | bz2                                     |
+| -J  | xz                                      |
+| -a  | detect compression program by suffix    |
++-----+-----------------------------------------+
+
+x.2.1. Create gziped archive:
+tar -czvf package.tar.gz $FILES
+
+x.2.2. -I option defines custom compression program:
+tar -I gzip package.tar.gz $FILES
+
+x.2.3. Unpack archive:
 tar -xvf package.tar.gz
 
-x.3. Custom compression
-
-Different flags stand for different compression:
- -z gzip
- -j bzip2
- -J xz
- -a detect compression program by suffix
-
--I option defines custom compression program.
-Omit present flags for no compression at all
-
-x.4. Standard Output Writing / Standard Input Reading
+x.3. Standard Output Writing / Standard Input Reading
 Use - instead of archive name, e.g.:
 tar -czvf - directory1
 tar -xvf -
+
+x.4. List files in archive:
+tar -tf $ARCHIVE
 
