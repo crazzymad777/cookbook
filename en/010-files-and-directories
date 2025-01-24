@@ -45,4 +45,9 @@ du -sh dir1 file1 dir2
 1.11. Check file type
 file $FILENAME
 
+1.12. Display file attributes such as last modified time, size and so on
+stat $FILENAME
+
+1.13. Write file/s to standart output
+cat file1 file2 file3
 
