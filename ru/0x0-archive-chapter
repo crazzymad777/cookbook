@@ -25,7 +25,7 @@ x.2.1. Создание gzip-архива:
 tar -czvf package.tar.gz $FILES
 
 x.2.2. Опция -I определяет произвольную программу сжатия:
-tar -I gzip package.tar.gz $FILES
+tar -I gzip -cvf package.tar.gz $FILES
 
 x.2.3. Распаковка сжатого архива:
 tar -xvf package.tar.gz
