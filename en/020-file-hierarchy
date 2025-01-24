@@ -1,0 +1,27 @@
+## Chapter 2. File Hierarchy
+
+Directories divided by its functionality.
+
+/ - root directory
+/sbin - executable files
+/bin - executable files
+/lib - libraries
+/etc - configuration (unshareable)
+/var - variable data
+/boot - files of the boot loader (unshareable)
+/tmp - temporary files
+/srv - data provided by services
+/usr - secondary hierarchy (shareable)
+/opt - additional software (shareable)
+/dev - device files
+/media - mount point for removable media
+/mnt - mount point for mounting a filesystem temporarily
+
+optional:
+------------------------------------------------
+/home - user home directories
+/lib<qualifier>	- alternate format essential shared libraries
+/root - home directory for the root user
+------------------------------------------------
+/run - temporary files across system runnings [Data relevant to running processes]
+
