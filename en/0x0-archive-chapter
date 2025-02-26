@@ -27,8 +27,8 @@ tar -czvf package.tar.gz $FILES
 x.2.2. -I option defines custom compression program:
 tar -I gzip -cvf package.tar.gz $FILES
 
-x.2.3. Unpack archive:
-tar -xvf package.tar.gz
+x.2.3. Unpack compressed archive:
+tar -xzf package.tar.gz
 
 x.3. Standard Output Writing / Standard Input Reading
 Use - instead of archive name, e.g.:
