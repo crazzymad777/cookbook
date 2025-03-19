@@ -8,7 +8,11 @@ gpg --cipher-algo AES256 -c [file]
 y.1.2. Decrypt symmetrically encrypted file
 gpg --cipher-algo AES256 -o [output] -d [file]
 
-y.1.3. Passphrase from file
+y.1.3. Encrypt/Decrypt with no key cache
+gpg --cipher-algo AES256 -c [file] --no-symkey-cache
+gpg --cipher-algo AES256 -o [output] -d [file] --no-symkey-cache
+
+y.1.4. Passphrase from file
 gpg --pinentry-mode loopback --passphrase-file=mypassword ...
 
 
